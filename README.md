@@ -1,21 +1,6 @@
-[![Codemagic build status](https://api.codemagic.io/apps/5d0f190099fdb70008475b03/5d0f190099fdb70008475b02/status_badge.svg)](https://codemagic.io/apps/5d0f190099fdb70008475b03/5d0f190099fdb70008475b02/latest_build)
+# Todo - Simple & Beautiful
 
-<h1 align="center">
-  <br>
-  <a href=""><img src="https://lh3.googleusercontent.com/WoCgEV-IoxkLTozlfqpxKr_uRTQ7jPFEetLWLTgIVTB4YcrPFpj4LpD9q4XD7Ij2Hos=s360" alt="Todo" width="200"></a>
-  <br>
-  Todo - Simple & Beautiful
-  <br>
-</h1>
-
-<h4 align="center">A minimal Todo mobile app made using <a href="https://flutter.dev" target="_blank">Flutter</a>.</h4>
-
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-</p>
+<h4 align="center">A minimal Todo mobile app made using Flutter.</h4>
 
 <p float="left">
   <img src="screenshots/screen01.png" width="200" />
@@ -24,7 +9,7 @@
   <img src="screenshots/screen04.png" width="200" />
 </p>
 
-## Key Features
+## Features
 
 * Easily add and remove tasks
 * Organize tasks under categories. editing.
@@ -47,24 +32,3 @@ $ flutter packages get
 # Run the app
 $ flutter run
 ```
-
-## Download
-
-You can [download](https://play.google.com/store/apps/details?id=com.queenstech.todo) the latest installable version of Todo for Android.
-
- <a href="https://play.google.com/store/apps/details?id=com.queenstech.todo"><img src="https://play.google.com/intl/en_us/badges/images/generic/ne_badge_web_generic.png" width="250"></a>
-
-
-
-## Credits
-- [Design Inspiration](https://goo.gl/Y5rd7L)
-
-## License
-
-MIT
-
----
-
-> GitHub [@sabinbajracharya](https://github.com/sabinbajracharya) &nbsp;&middot;&nbsp;
-> Instagram [@er_sabin](https://www.instagram.com/er_sabin/)
-

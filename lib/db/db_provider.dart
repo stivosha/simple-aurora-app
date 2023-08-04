@@ -1,3 +1,5 @@
+// SPDX-FileCopyrightText: Copyright 2023 Open Mobile Platform LLC <community@omp.ru>
+// SPDX-License-Identifier: MIT
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart' as p;
@@ -65,23 +67,6 @@ class DBProvider {
 
   initDB() async {
     String path = await _dbPath;
-    if (Platform.isLinux || Platform.isMacOS || Platform.isWindows) {
-      sqfliteFfiInit();
-      var db = await databaseFactoryFfi.openDatabase(path);
-      await db.execute("CREATE TABLE IF NOT EXISTS Task ("
-          "id TEXT PRIMARY KEY,"
-          "name TEXT,"
-          "color INTEGER,"
-          "code_point INTEGER"
-          ")");
-      await db.execute("CREATE TABLE IF NOT EXISTS Todo ("
-          "id TEXT PRIMARY KEY,"
-          "name TEXT,"
-          "parent TEXT,"
-          "completed INTEGER NOT NULL DEFAULT 0"
-          ")");
-      return db;
-    }
     return await openDatabase(path, version: 1, onOpen: (db) {},
         onCreate: (Database db, int version) async {
       print("DBProvider:: onCreate()");
