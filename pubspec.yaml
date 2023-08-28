@@ -37,12 +37,12 @@ dependencies:
   sqflite_common_ffi:
   path_provider_aurora:
     git:
-      url: git@gitlab.com:omprussia/flutter/flutter-plugins.git
+      url: https://gitlab.com/omprussia/flutter/flutter-plugins.git
       ref: master
       path: packages/path_provider/path_provider_aurora
   sqflite_aurora:
     git:
-      url: git@gitlab.com:omprussia/flutter/flutter-plugins.git
+      url: https://gitlab.com/omprussia/flutter/flutter-plugins.git
       ref: master
       path: packages/sqflite/sqflite_aurora
 
