@@ -1,4 +1,7 @@
+// SPDX-FileCopyrightText: Copyright 2024 Open Mobile Platform LLC <community@omp.ru>
+// SPDX-License-Identifier: MIT
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import 'package:todo/scopedmodel/todo_list_model.dart';
@@ -95,7 +98,6 @@ class _DetailScreenState extends State<DetailScreen>
             appBar: AppBar(
               elevation: 0,
               iconTheme: IconThemeData(color: Colors.black26),
-              brightness: Brightness.light,
               backgroundColor: Colors.white,
               actions: [
                 IconButton(
@@ -119,7 +121,7 @@ class _DetailScreenState extends State<DetailScreen>
                   color: _color,
                   onActionPressed: () => model.removeTask(_task),
                 ),
-              ],
+              ], systemOverlayStyle: SystemUiOverlayStyle.dark,
             ),
             body: Padding(
               padding: EdgeInsets.symmetric(horizontal: 0.0, vertical: 8.0),

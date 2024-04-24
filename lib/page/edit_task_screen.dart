@@ -1,4 +1,7 @@
+// SPDX-FileCopyrightText: Copyright 2024 Open Mobile Platform LLC <community@omp.ru>
+// SPDX-License-Identifier: MIT
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:scoped_model/scoped_model.dart';
 
 import 'package:todo/scopedmodel/todo_list_model.dart';
@@ -61,8 +64,7 @@ class _EditCardScreenState extends State<EditTaskScreen> {
             iconTheme: IconThemeData(
               color: Colors.black26,
             ),
-            brightness: Brightness.light,
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.white, systemOverlayStyle: SystemUiOverlayStyle.dark,
           ),
           body: Container(
             constraints: BoxConstraints.expand(),

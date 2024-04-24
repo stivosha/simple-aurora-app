@@ -9,8 +9,8 @@ License: MIT
 Source0: %{name}-%{version}.tar.zst
 
 BuildRequires: cmake
+BuildRequires: ninja
 BuildRequires: pkgconfig(sqlite3)
-BuildRequires: pkgconfig(flutter-embedder)
 
 %description
 %{summary}.
@@ -19,11 +19,11 @@ BuildRequires: pkgconfig(flutter-embedder)
 %autosetup
 
 %build
-%cmake -DCMAKE_BUILD_TYPE=%{_flutter_build_type}
-%make_build
+%cmake -GNinja -DCMAKE_BUILD_TYPE=%{_flutter_build_type} -DPSDK_VERSION=%{_flutter_psdk_version} -DPSDK_MAJOR=%{_flutter_psdk_major}
+%ninja_build
 
 %install
-%make_install
+%ninja_install
 
 %files
 %{_bindir}/%{name}

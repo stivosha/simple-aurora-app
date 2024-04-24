@@ -1,4 +1,7 @@
+// SPDX-FileCopyrightText: Copyright 2024 Open Mobile Platform LLC <community@omp.ru>
+// SPDX-License-Identifier: MIT
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 
 class PrivacyPolicyScreen extends StatelessWidget {
@@ -14,8 +17,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
         centerTitle: true,
         elevation: 0,
         iconTheme: IconThemeData(color: Colors.black26),
-        brightness: Brightness.light,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white, systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
       body: Markdown(data: _PRIVACY_POLICY),
     );
