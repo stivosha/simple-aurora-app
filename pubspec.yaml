@@ -20,6 +20,12 @@ environment:
   sdk: '>=3.2.2 <4.0.0'
 
 dependencies:
+  shared_preferences: ^2.1.2
+  shared_preferences_aurora:
+    git:
+      url: https://gitlab.com/omprussia/flutter/flutter-plugins.git
+      ref: shared_preferences_aurora-0.5.0
+      path: packages/shared_preferences/shared_preferences_aurora
   flutter:
     sdk: flutter
   scoped_model: ^2.0.0-nullsafety.0
